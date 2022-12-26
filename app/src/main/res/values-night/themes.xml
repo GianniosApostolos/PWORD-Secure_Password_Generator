@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Password_Generator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <item name="colorOnPrimary">@color/soft_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/soft_white</item>
+        <item name="colorSecondaryVariant">@color/outline</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item> <!-- Changes the color of the notification bar -->
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorHint">@color/hintColor</item>
+
+        <item name="fontFamily">@font/manrope_variable_font_wght</item>
+
+
+    </style>
+
+
+    <style name="myTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/outline</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="myTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+
+
+    <!-- For highlighting the text in EditText field
+    <style name="myEditText">
+        <item name="android:textColorHighlight">@color/teal_700</item>
+    </style>
+    -->
+</resources>

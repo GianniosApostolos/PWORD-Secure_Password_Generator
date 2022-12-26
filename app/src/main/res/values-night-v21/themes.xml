@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Password_Generator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <item name="colorOnPrimary">@color/soft_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/soft_white</item>
+        <item name="colorSecondaryVariant">@color/outline</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/outline</item> <!-- Changes the color of the notification bar -->
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/black</item>
+
+        <item name="android:navigationBarColor">@color/outline</item>
+
+        <item name="android:textColorHint">@color/hintColor</item>
+
+        <item name="fontFamily">@font/manrope_variable_font_wght</item>
+
+    </style>
+
+
+    <style name="myTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="myTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="myEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:backgroundTint">@color/soft_white</item>
+    </style>
+
+    <style name="myButton" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/outline</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="mySpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:backgroundTint">@color/soft_white</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <!-- For highlighting the text in EditText field
+    <style name="myEditText">
+        <item name="android:textColorHighlight">@color/teal_700</item>
+    </style>
+    -->
+</resources>

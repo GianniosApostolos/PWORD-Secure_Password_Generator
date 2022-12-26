@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PWORD - Secure Password Generator</string>
+    <string name="mainTitle">Password Generator - Κωδικός προσαρμοσμένος στις ανάγκες σας</string>
+    <string name="options">Επιλογές κωδικού: </string>
+    <string name="allCharacters">Όλα τα γράμματα</string>
+    <string name="capitalCharacters">Κεφαλαία Γράμματα</string>
+    <string name="smallCharacters">Πεζά Γράμματα</string>
+    <string name="digits">Ψηφία</string>
+    <string name="symbols">Σύμβολα</string>
+    <string name="excludedEditTextHint">Εξαιρούμενοι χαρακτήρες. Μπορεί να παραμείνει κενο…</string>
+    <string name="passwordResultText">Ο κωδικός θα εμφανιστεί εδώ…</string>
+    <string name="generatePasswordButton">Δημιουργία Κωδικού</string>
+    <string name="copyPasswordButton">Αντιγραφή</string>
+    <string name="passwordLength">Μήκος κωδικού</string>
+
+    <string name="customStringSpinnerItem">Προσαρμοσμένο</string>
+    <string name="alphanumericalSpinnerItem">Αλφαριθμητικά</string>
+    <string name="digitsSpinnerItem">Ψηφία</string>
+    <string name="allLettersSpinnerItem">Όλα τα γράμματα</string>
+    <string name="lowercaseSpinnerItem">Πεζά Γράμματα</string>
+    <string name="uppercaseSpinnerItem">Κεφαλαία Γράμματα</string>
+    <string name="symbolsSpinnerItem">Σύμβολα</string>
+    <string name="allSpinnerItem">Όλα</string>
+
+    <string-array name="passwordOptions_array">
+        <item>@string/customStringSpinnerItem</item>
+        <item>@string/alphanumericalSpinnerItem</item>>
+        <item>@string/digitsSpinnerItem</item>
+        <item>@string/allLettersSpinnerItem</item>
+        <item>@string/lowercaseSpinnerItem</item>
+        <item>@string/uppercaseSpinnerItem</item>
+        <item>@string/symbolsSpinnerItem</item>
+        <item>@string/allSpinnerItem</item>
+    </string-array>
+
+</resources>

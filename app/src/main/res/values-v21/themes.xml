@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Password_Generator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <item name="colorOnPrimary">@color/soft_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_gray</item>
+        <item name="colorSecondaryVariant">@color/dark_gray</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item> <!-- Changes the color of the notification bar -->
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/soft_white</item>
+
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="android:textColorHint">@color/hintColor</item>
+
+        <item name="fontFamily">@font/manrope_variable_font_wght</item>
+
+
+    </style>
+
+    <style name="myTitleTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="myTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+
+    <style name="mySpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/mainTitle"
+        style="@style/myTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textFontWeight="700"
+        android:text="@string/mainTitle"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <TextView
+        android:id="@+id/optionsTextView"
+        style="@style/myTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:text="@string/options"
+        android:textFontWeight="700"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <GridLayout
+        android:id="@+id/optionsGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <Spinner
+            android:id="@+id/optionsDropdown"
+            style="@style/mySpinner"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <EditText
+            android:id="@+id/passwordLengthEditText"
+            style="@style/myEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:hint="@string/passwordLength"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:maxLength="2" />
+
+    </GridLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    <GridLayout
+        android:id="@+id/customOptionsGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <!-- We use marginEnd and not marginStart because we have inverted the layoutDirection in order to
+             To display text at the left of a checkbox
+         -->
+        <CheckBox
+            android:id="@+id/checkbox_allChars"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/allCharacters"
+            android:textFontWeight="700"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_capitalChars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/capitalCharacters"
+            android:textFontWeight="700"/>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_digits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/digits"
+            android:textFontWeight="700"/>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_smallChars"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/smallCharacters"
+            android:textFontWeight="700"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_symbols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/symbols"
+            android:textFontWeight="700"/>
+
+    </GridLayout>
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/excludedCharactersEditText"
+        style="@style/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/excludedEditTextHint"
+        android:inputType="textMultiLine"
+        android:maxHeight="110dp"
+        android:minHeight="70dp"
+        android:layout_marginTop="10dp"
+        android:scrollHorizontally="false"
+        android:singleLine="false" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:rowCount="1">
+
+    <EditText
+        android:id="@+id/passwordResult"
+        style="@style/myEditText"
+        android:maxWidth="250dp"
+        android:layout_marginStart="5dp"
+        android:layout_columnWeight="90"
+        android:minHeight="100dp"
+        android:layout_height="match_parent"
+        android:hint="@string/passwordResultText"
+        android:inputType="textMultiLine|textNoSuggestions"
+        />
+
+        <Button
+            android:id="@+id/passwordCopyButton"
+            style="@style/myButton"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:minWidth="100dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:text="@string/copyPasswordButton"
+            android:onClick="onCopyPasswordClicked"
+            android:layout_columnWeight="10"
+            />
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2" />
+
+    <GridLayout
+        android:id="@+id/bottomLineGirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_marginBottom="30dp">
+
+    <Button
+        android:id="@+id/generatePasswordButton"
+        style="@style/myButton"
+        android:textSize="15dp"
+        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_column="2"
+        android:text="@string/generatePasswordButton"
+        android:onClick="onGeneratePasswordClicked"
+        />
+    </GridLayout>
+
+</LinearLayout>
+
+</ScrollView>

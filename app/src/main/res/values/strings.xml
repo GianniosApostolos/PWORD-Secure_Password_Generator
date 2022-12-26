@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PWORD - Secure Password Generator</string>
+    <string name="mainTitle">Password Generator - A password tailored to your needs</string>
+    <string name="options">Password options: </string>
+    <string name="allCharacters">All letters</string>
+    <string name="capitalCharacters">Uppercase Letters</string>
+    <string name="smallCharacters">Lowercase Letters</string>
+    <string name="digits">Digits</string>
+    <string name="symbols">Symbols</string>
+    <string name="excludedEditTextHint">Enter excluded characters or leave empty…</string>
+    <string name="passwordResultText">Password will appear here…</string>
+    <string name="generatePasswordButton">Generate password</string>
+    <string name="copyPasswordButton">Copy</string>
+    <string name="passwordLength">Length</string>
+
+    <string name="customStringSpinnerItem">Custom</string>
+    <string name="alphanumericalSpinnerItem">Alphanumerical</string>
+    <string name="digitsSpinnerItem">Digits</string>
+    <string name="allLettersSpinnerItem">All Letters</string>
+    <string name="lowercaseSpinnerItem">Lowercase Letters</string>
+    <string name="uppercaseSpinnerItem">Uppercase Letters</string>
+    <string name="symbolsSpinnerItem">Symbols</string>
+    <string name="allSpinnerItem">All</string>
+
+    <string-array name="passwordOptions_array">
+        <item>@string/customStringSpinnerItem</item>
+        <item>@string/alphanumericalSpinnerItem</item>>
+        <item>@string/digitsSpinnerItem</item>
+        <item>@string/allLettersSpinnerItem</item>
+        <item>@string/lowercaseSpinnerItem</item>
+        <item>@string/uppercaseSpinnerItem</item>
+        <item>@string/symbolsSpinnerItem</item>
+        <item>@string/allSpinnerItem</item>
+    </string-array>
+
+</resources>
