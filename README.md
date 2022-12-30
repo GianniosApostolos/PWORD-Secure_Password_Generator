@@ -6,7 +6,7 @@
  ### What can this application offer to the user
  * The user can create a password of varying length (1-99)
  * The user can choose their password type from one of the available options or customize it to their liking. Expand the Available options tab for more info. 
- * The user may enter whichever characters they wante at the designated space and exclude them from their password  
+ * The user may enter whichever characters they want at the designated space and exclude them from their password  
  &nbsp;&nbsp;&nbsp;&nbsp; For example similar characters like "il1L" or "o0O" can be excluded to avoid confusion.
  * The password can be easily copied to clipboard for easier transferability between applications
  
